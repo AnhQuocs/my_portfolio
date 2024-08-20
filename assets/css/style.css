@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F1F1F1;
+    line-height: 1.5;
+}
+
+/* Side bar */
+#side-bar {
+    width: 300px;
+    z-index: 3;
+    position: fixed;
+    background-color: #fff;
+    height: 100%;
+    display: block;
+    animation: sideBar ease-out  0.4s;
+}
+
+.sb-container {
+    padding: 0.15px 16px;
+}
+
+.sb-container img{
+    width: 45%;
+    border-radius: 4px;
+}
+
+.sb-container h4 b {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.sb-container p {
+    font-size: 15px;
+    color: #757575;
+    margin: 15px 0;
+}
+
+.bar-block {
+
+}
+
+.bar-block a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    padding: 8px 16px;
+}
+
+.bar-block a:first-child {
+    color: #009688;
+}
+
+.bar-block a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.bar-block a i {
+    margin: 0 16px 0 0;
+}
+
+.bar-contact {
+    padding: 0.18px 16px;
+    margin: 16px 0;
+}
+
+.bar-contact a {
+    text-decoration: none;
+    color: #000;
+}
+
+.bar-contact a:hover {
+    opacity: 0.5;
+}
+
+.bar-contact a:first-child i {
+    background-color: #000;
+    color: #fff;
+}
+
+@keyframes sideBar{
+    from {
+        transform: translateX(-50%);
+        opacity: 0.1;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+/* Content */
+#content {
+    margin-left: 300px;
+}
+
+.header {
+    padding: 0.15px 16px;
+}
+
+.header h1 {
+    margin: 10px 0;
+}
+
+.header h1 b {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.sub-heading {
+    padding: 30px 0 16px 0;
+    border-bottom: 6px solid #ccc;
+}
+
+.sub-heading span {
+    margin: 0 16px 0 0;
+}
+
+.sub-heading button {
+    padding: 8px 16px;
+    font-size: 15px;
+    border: none;
+    background-color: #fff;
+}
+
+.sub-heading button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.btn-all {
+    background-color: #000 !important;
+    color: #fff;
+}
+
+.btn-all:hover {
+    background-color: #ccc !important;
+    color: #000;
+}
+
+.sub-heading button i {
+    margin: 0 16px 0 0;
+}
+
+/* Content infos */
+.content-infos {
+    display: flex;
+    padding: 0 8px;
+    padding-top: 16px;
+}
+
+.content-info {
+    padding: 0 8px;
+}
+
+.content-info img {
+    width: 100%;
+    display: block;
+}
+
+.content-info img:hover {
+    opacity: 0.6;
+}
+
+.text-info {
+    padding: 0.15px 16px;
+    background-color: #fff;
+}
+
+.text-info p {
+    margin: 15px 0;
+}
+
+.text-info p b {
+    font-size: 15px;
+}
+
+/* New Page */
+.new-page {
+    align-items: center;
+    justify-content: center;
+    padding: 48px 0 32px 0;
+}
+
+.new-page,
+.page-items {
+    display: flex;
+}
+
+.new-page ul li:first-child a{
+    color: #fff;
+    background-color: #000;
+}
+
+.new-page i {
+    padding: 12px 16px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.new-page a:hover,
+.new-page i:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.new-page a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    padding: 8px 16px;
+}
+
+.new-page li {
+    list-style-type: none;
+}
+
+/* Content IMG */
+.content-img {
+    display: flex;
+    padding: 16px 8px;
+}
+
+.content-img img {
+    width: 100%;
+    padding: 0 8px;
+}
+
+/* Content About */
+.content-about {
+    margin: 0 0 32px;
+    padding: 12px 24px;
+}
+
+.content-about h4 {
+    margin: 10px 0;
+}
+
+.content-about h4 b {
+    font-size: 20px;
+}
+
+.content-about p {
+    font-size: 15px;
+}
+
+.content-about hr {
+    border: none;
+    margin: 20px 0;
+}
+
+.content-about .technical {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sub-technical {
+    margin: 15px 0;
+}
+
+.chart-layout {
+    width: 100%;
+    background-color: #9E9E9E;
+}
+
+.chart-layout_item {
+    width: var(--percent);
+    height: 38px;
+    background-color: #616161;
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+}
+
+.download-btn {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.download-btn button {
+    border: none;
+    color: #fff;
+    margin: 16px 0;
+    padding: 12px 24px;
+    background-color: #616161;
+}
+
+.download-btn button:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.download-btn button i {
+    margin: 0 16px 0 0;
+}
+
+.charge {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.buy-package {
+    display: flex;
+}
+
+.package-item {
+    border: 1px solid #ccc;
+    flex: 1;
+    margin: 0 8px;
+    opacity: 0.55;
+}
+
+.package-item:hover {
+    opacity: 1;
+}
+
+.package-item p {
+    font-size: 24px;
+    padding: 32px 16px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+
+.backage-pro p {
+    background-color: #009688 ;
+}
+
+.package-item li {
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-size: 15px;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.package-item li h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.package-item li span {
+    font-size: 15px;
+}
+
+.package-item .package-btn {
+    background-color: #F1F1F1;
+    border: none;
+    padding: 24px 16px;
+}
+
+.package-btn button {
+    border: none;
+    font-size: 15px;
+    padding: 12px 24px;
+    background-color: #009688;
+    color: #fff;
+}
+
+.package-btn button:hover {
+    cursor: pointer;
+    background-color: #000;
+}
+
+/* Content Contact */
+.content-contact {
+    padding: 12px 24px;
+    background-color: #9E9E9E;
+}
+
+.contact-heading {
+    padding: 22px 24px;
+    background-color: #9E9E9E;
+}
+
+.contact-heading b {
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.contact-infos {
+    display: flex;
+    margin: 0 -8px;
+    padding: 24px 0;
+}
+
+.contact-info {
+    background-color: #616161;
+    text-align: center;
+    flex: 1;
+}
+
+.contact-info p {
+    color: #F1F1F1;
+    padding-top: 15px;
+}
+
+.contact-place {
+    padding: 15px 0;
+}
+
+.contact-info i {
+   font-size: 36px;
+}
+
+.contact-location {
+    background-color: #009688;
+}
+
+.hr-contact {
+    opacity: 0.6;
+    margin: 20px 0;
+}
+
+.form-contact {
+
+}
+
+.form-contact div {
+    font-size: 15px;
+    margin: 16px 0;
+}
+
+.form-contact label {
+    display: block;
+}
+
+.form-contact input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-contact button {
+    font-size: 15px;
+    color: #fff;
+    margin: 0 0 16px;
+    padding: 10px 16px;
+    border: none;
+    background-color: #000;
+}
+
+.form-contact button:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.form-contact button i {
+    margin: 0 12px 0 0;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #616161;
+    color: #fff;
+    padding: 32px 16px;
+    display: flex;
+}
+
+.copyright {
+    padding: 0 8px;
+    flex: 1;
+}
+
+.tags h3,
+.blog h3,
+.copyright h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.copyright p {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.copyright p a {
+    color: #fff;
+}
+
+.blog {
+    flex: 1;
+    padding: 0 8px;
+}
+
+.blog-list {
+    padding: 16px;
+    display: flex;
+}
+
+.blog-list:hover {
+    background-color: #ccc;
+}
+
+.blog-list img {
+    width: 50px;
+    margin: 0 16px 0 0;
+}
+
+.blog-content span {
+    display: block;
+    font-size: 18px;
+}
+
+.blog-content span:last-child {
+    font-size: 16px;
+}
+
+.blog-content {
+    flex-direction: column;
+}
+
+.tags {
+    flex: 1;
+    padding: 0 8px;
+}
+
+.tags-content .tag-item:first-child {
+    color: #fff;
+    background-color: #000;
+    font-size: 16px;
+}
+
+.tag-item {
+    color: #000;
+    display: inline-block;
+    font-size: 13px;
+    background-color: #9E9E9E;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+/* End */
+.end {
+    text-align: center;
+    padding: 24px 0;
+    color: #fff;
+    background-color: #000;
+    font-size: 15px;
+}
+
+.end a {
+    color: #fff;
+}
+
+.end a:hover {
+    opacity: 0.6;
+}
